@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="com.prs.pratap.firebaseapplication.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/firebase"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_action_firebase"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:hint="Enter email..."
+        android:layout_below="@+id/firebase"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:id="@+id/email"
+        android:padding="15dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:hint="Enter password..."
+        android:background="@drawable/input_background"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email"
+        android:id="@+id/password"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:imeOptions="actionSend"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onClickLogin"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>
